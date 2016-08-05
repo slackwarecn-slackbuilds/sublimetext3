@@ -15,3 +15,7 @@ cd sublimetext
 ln -s ../sublime_text_3_build_3114_x64.tar.bz2 # or sublime_text_3_build_3114_x32.tar.bz2
 sudo sh sublimetext.SlackBuild
 ```
+
+## Recommend patch
+
+[Sublime-Text-3 IM-FIX](https://github.com/nnnewb/sublime-text-imfix)
