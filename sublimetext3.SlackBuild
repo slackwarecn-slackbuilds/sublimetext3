@@ -49,7 +49,7 @@
 #
 # |-----------------------------------------------------------------| #
 
-PRGNAM=sublimetext			# replace with name of program
+PRGNAM=sublimetext3			# replace with name of program
 VERSION=${VERSION:-3114}	# replace with version of program
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SlackwareCN}		# the "_SBo" is required
