@@ -23,36 +23,10 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-# |-----------------------------------------------------------------| #
-# REMOVE THIS ENTIRE BLOCK OF TEXT #
-#
-# A license is required, and we strongly suggest you use the above
-# BSD/MIT style license. We DO NOT accept "Public Domain" scripts.
-# Public domain is not valid in some countries, and no license is
-# worse than a "bad" license in those countries.
-#
-# This template is not meant to be a 'cut and paste' script to
-# enable any random user to make a working package.  While
-# we're certainly not discouraging use of this template, if
-# you haven't manually gone through each step of the process
-# without the build script (typically as a normal user, as this
-# will reveal problems that you won't see as root), then there's
-# a good chance that something important is missing from your
-# submission.
-
-# When using this template script, please remove as many of
-# these unnecessary comments as possible.  Commented code is
-# a good thing, but if it's obvious, there's no need to comment it.
-#
-# AGAIN, REMOVE THE COMMENTS IF THEY ARE NOT NEEDED - DON'T JUST
-# DELETE THIS BLOCK OF TEXT WITHOUT BOTHERING TO READ WHAT'S IN IT.
-#
-# |-----------------------------------------------------------------| #
-
-PRGNAM=sublimetext3			# replace with name of program
-VERSION=${VERSION:-3114}	# replace with version of program
+PRGNAM=sublimetext3
+VERSION=${VERSION:-3126}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SlackwareCN}		# the "_SBo" is required
+TAG=${TAG:-_SlackwareCN}		# slackbuilds.org不可能接收这个slackbuild脚本，故打上SlackwareCN标记
 
 # Automatically determine the architecture we're building on:
 if [ -z "$ARCH" ]; then
@@ -95,7 +69,7 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION
-tar xvf $CWD/sublime_text_3_build_3114_$TARBALL_SUFFIX.tar.bz2
+tar xvf $CWD/sublime_text_3_build_3126_$TARBALL_SUFFIX.tar.bz2
 cd sublime_text_3
 chown -R root:root .
 find -L . \
